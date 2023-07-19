@@ -12,6 +12,7 @@
   "author": "Shu Ding",
   "license": "Apache-2.0",
   "dependencies": {
+    "@asktro/nextra": "^0.0.15",
     "@vercel/analytics": "^0.1.11",
     "focus-visible": "^5.2.0",
     "intersection-observer": "^0.12.2",

@@ -14,6 +14,7 @@ import {
   tableOfContentsTitleMap,
   titleMap,
 } from "./translations/text";
+import { Search } from "@asktro/nextra"
 
 /** @type {import('nextra-theme-docs').DocsThemeConfig} */
 const themeConfig = {
@@ -32,6 +33,9 @@ const themeConfig = {
   },
   search: {
     placeholder: () => useLocalesMap(searchPlaceholderMap),
+    component: () => (
+      <Search apiKey={process.env.NEXT_PUBLIC_ASKTRO_CLIENT_API_KEY} />
+    ),
   },
   editLink: {
     text: () => useLocalesMap(editTextMap),
